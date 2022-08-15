@@ -10,12 +10,17 @@ export default function Home() {
 				<meta name="description" content="Descriptions" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
-			<main className={styles.main}>
-				<div>
-					<p className="text-3xl font-bold underline">Reel</p>
-				</div>
-			</main>
+			<div className="bg-video-wrap">
+				<video
+					className="reel object-cover"
+					src="/reel.mp4"
+					loop
+					muted
+					preload
+					autoPlay="autoplay"
+				></video>
+			</div>
+			<main className={styles.main}></main>
 
 			{/* <footer className={styles.footer}>
 				<a

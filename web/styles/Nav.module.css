@@ -1,84 +1,81 @@
 .nav {
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  /* align-content: flex-end; */
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  /* height: 100%; */
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+	/* align-content: flex-end; */
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	/* height: 100%; */
 
-  padding-left: 2%;
-  padding-right: 2%;
-  font-weight: 200;
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  font-size: 2rem;
-  
-  opacity: 100%;
-  text-align: center;
-  /* border: 3px red solid; */
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 0.7%;
+	padding-top: 0.7%;
+	font-weight: 200;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	font-size: 2rem;
+	background: black;
+	opacity: 100%;
+	text-align: center;
+	/* border: 3px red solid; */
 }
 
 .header {
-  justify-content: flex-start;
-
+	justify-content: flex-start;
 }
 
 .nav > ul {
-  display:flex;
-  /* justify-content:space-between; */
-  justify-content: flex-end;
-  list-style-type: none; 
-  /* flex-direction: row; */
+	display: flex;
+	/* justify-content:space-between; */
+	justify-content: flex-end;
+	list-style-type: none;
+	/* flex-direction: row; */
 }
 
 .nav > ul > li {
-  padding-left: 8%;
-  
+	padding-left: 8%;
 }
 
 .nav > ul :hover {
-  opacity: 70%;
-  transition: .7s;
+	opacity: 70%;
+	transition: 0.7s;
 }
 
-
 @media (max-width: 910px) {
-  .navContainer .menu {
-    display: flex;
-  }
+	.navContainer .menu {
+		display: flex;
+	}
 
-  .navContainer ul {
-    --height: 0px;
+	.navContainer ul {
+		--height: 0px;
 
-    flex-direction: column;
-    background: var(--nav-bg);
-    /* position: absolute; */
-    width: 100%;
-    left: 0;
-    top: 56px;
-    height: var(--height);
-    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
-  }
-  .navContainer ul.active {
-    --height: calc(
-      (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
-    );
-    /*   (Block Level Padding + The Font Size) * The Number of Children   */
-    
-    
-    transition: 1s ease;
-  }
+		flex-direction: column;
+		background: var(--nav-bg);
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 56px;
+		height: var(--height);
+		transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	}
+	.navContainer ul.active {
+		--height: calc(
+			(((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+		);
 
-  .navContainer ul li {
-    width: 100%;
-    text-align: center;
-  }
-  .navContainer ul li a {
-    width: 100%;
-    text-transform: capitalize;
-  }
+		transition: 1s ease;
+	}
+
+	.navContainer ul li {
+		width: 100%;
+		text-align: center;
+	}
+	.navContainer ul li a {
+		width: 100%;
+		text-transform: capitalize;
+	}
 }
