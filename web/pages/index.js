@@ -10,17 +10,18 @@ export default function Home() {
 				<meta name="description" content="Descriptions" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className="bg-video-wrap">
-				<video
-					className="reel object-cover"
-					src="/reel.mp4"
-					loop
-					muted
-					preload
-					autoPlay="autoplay"
-				></video>
-			</div>
-			<main className={styles.main}></main>
+			<main className={styles.main}>
+				<div className="bg-video-wrap">
+					<video
+						className="reel object-cover max-w-none"
+						src="/reel.mp4"
+						loop
+						muted
+						preload="true"
+						autoPlay="autoplay"
+					></video>
+				</div>
+			</main>
 
 			{/* <footer className={styles.footer}>
 				<a

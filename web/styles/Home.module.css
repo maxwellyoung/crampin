@@ -1,5 +1,7 @@
 .container {
 	padding: 0 0 0;
+	width: 100%;
+	height: 100%;
 }
 
 .reel {
@@ -9,7 +11,7 @@
 	display: block;
 	width: 100%;
 	height: 100%;
-	max-width: auto;
+	max-width: none !important;
 }
 
 .bg-video-wrap {
